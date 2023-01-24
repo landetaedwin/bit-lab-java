@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      #ddl-auto: create-drop
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://dbserver-posrgres.postgres.database.azure.com:5432/postgres
+    username: postgressadmin
+    password: P0$tgre$$.2023
+    driverClassName: org.postgresql.Driver
+
+server:
+  port: 9081
+  servlet:
+    context-path: /api
